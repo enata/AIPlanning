@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning", "AIPlanning\AIPlanning.csproj", "{12F7FE78-3A88-41C4-9557-A124A0ADA4FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Core", "AIPlanning.Core\AIPlanning.Core.csproj", "{8CB14F18-2D41-4D10-BBD9-E3C514476236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.AStarSearch", "AIPlanning.AStarSearch\AIPlanning.AStarSearch.csproj", "{A98F9F27-445F-4381-AC65-5A1CCE465FE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AIPlanning.Tests.AStarSearch", "AIPlanning.Tests.AStarSearch", "{013B3D9E-C807-4F6F-8477-CD3438533287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Tests.AStarSearch", "AIPlanning.Tests.AStarSearch\AIPlanning.Tests.AStarSearch.csproj", "{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Search", "AIPlanning.Search\AIPlanning.Search.csproj", "{E7872AF6-E67D-4F05-891B-901A66268240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Search.Problems", "AIPlanning.Search.Problems\AIPlanning.Search.Problems.csproj", "{2A643556-2163-4061-8506-88DA03AD80ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Test.Search.Problems", "AIPlanning.Test.Search.Problems\AIPlanning.Test.Search.Problems.csproj", "{C27ED808-B5BF-436F-8546-EBCE55C03876}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12F7FE78-3A88-41C4-9557-A124A0ADA4FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F7FE78-3A88-41C4-9557-A124A0ADA4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F7FE78-3A88-41C4-9557-A124A0ADA4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F7FE78-3A88-41C4-9557-A124A0ADA4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB14F18-2D41-4D10-BBD9-E3C514476236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB14F18-2D41-4D10-BBD9-E3C514476236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB14F18-2D41-4D10-BBD9-E3C514476236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB14F18-2D41-4D10-BBD9-E3C514476236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A98F9F27-445F-4381-AC65-5A1CCE465FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A98F9F27-445F-4381-AC65-5A1CCE465FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98F9F27-445F-4381-AC65-5A1CCE465FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98F9F27-445F-4381-AC65-5A1CCE465FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7872AF6-E67D-4F05-891B-901A66268240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7872AF6-E67D-4F05-891B-901A66268240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7872AF6-E67D-4F05-891B-901A66268240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7872AF6-E67D-4F05-891B-901A66268240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A643556-2163-4061-8506-88DA03AD80ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A643556-2163-4061-8506-88DA03AD80ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A643556-2163-4061-8506-88DA03AD80ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A643556-2163-4061-8506-88DA03AD80ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27ED808-B5BF-436F-8546-EBCE55C03876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27ED808-B5BF-436F-8546-EBCE55C03876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27ED808-B5BF-436F-8546-EBCE55C03876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27ED808-B5BF-436F-8546-EBCE55C03876}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F} = {013B3D9E-C807-4F6F-8477-CD3438533287}
+		{C27ED808-B5BF-436F-8546-EBCE55C03876} = {013B3D9E-C807-4F6F-8477-CD3438533287}
+	EndGlobalSection
+EndGlobal
