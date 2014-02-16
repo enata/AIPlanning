@@ -24,6 +24,27 @@ namespace AIPlanning.Search.Problems.Puzzle8
             _arrayHash = CalculateArrayHash();
         }
 
+        public Puzzle8State(int[,] stateArray) : this(stateArray, GetEmptyPosition(stateArray))
+        {
+            
+        }
+
+        private static Tuple<int, int> GetEmptyPosition(int[,] stateArray)
+        {
+            if (stateArray == null) throw new ArgumentNullException("stateArray");
+
+            for (int i = 0; i < stateArray.GetLength(0); i++)
+                for (int j = 0; j < stateArray.GetLength(1); j++)
+                {
+                    if (stateArray[i, j] == 0)
+                    {
+                        var emptyPosition = new Tuple<int, int>(i, j);
+                        return emptyPosition;
+                    }
+                }
+            throw new ArgumentException("Invalid state");
+        }
+
         public int[,] StateArray
         {
             get { return _stateArray; }

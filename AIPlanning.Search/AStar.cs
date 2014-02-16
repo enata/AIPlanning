@@ -23,7 +23,7 @@ namespace AIPlanning.Search
             if (problem == null)
                 throw new ArgumentNullException("problem");
 
-            var fringe = new SortedList<double, ISearchNode<T>>(new CostComparer()) {{0.0, problem.InitialState}};
+            var fringe = new SortedList<double, ISearchNode<T>>(new CostComparer()) {{0.0, problem.InitialState}}; // to be replaced with minheap
             var pathTracker = new PathTracker<T>();
             pathTracker.TrackNode(problem.InitialState, null);
 
@@ -41,8 +41,14 @@ namespace AIPlanning.Search
 
                 foreach (ISearchNode<T> successor in currentNode.Expand())
                 {
-                    if (!pathTracker.IsTracked(successor))
+                    bool isTracked = pathTracker.IsTracked(successor);
+                    if (!isTracked || pathTracker.GetDepth(currentNode) + 1 < pathTracker.GetDepth(successor))
                     {
+                        if (isTracked)
+                        {
+                            var nodeIndex = fringe.IndexOfValue(currentNode);
+                            fringe.RemoveAt(nodeIndex);
+                        }
                         pathTracker.TrackNode(successor, currentNode);
                         double cost = CostOf(successor, problem, pathTracker);
                         fringe.Add(cost, successor);  
@@ -71,7 +77,7 @@ namespace AIPlanning.Search
 
                 foreach (ISearchNode<T> successor in currentNode.Expand())
                 {
-                    if (!pathTracker.IsTracked(successor))
+                    if (!pathTracker.IsTracked(successor) || pathTracker.GetDepth(currentNode) + 1 < pathTracker.GetDepth(successor))
                     {
                         pathTracker.TrackNode(successor, currentNode);
                         double cost = pathTracker.GetDepth(successor);
