@@ -52,10 +52,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AIPlanning.AStarSearch\AIPlanning.AStarSearch.csproj">
-      <Project>{A98F9F27-445F-4381-AC65-5A1CCE465FE7}</Project>
-      <Name>AIPlanning.AStarSearch</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AIPlanning.Core\AIPlanning.Core.csproj">
       <Project>{8CB14F18-2D41-4D10-BBD9-E3C514476236}</Project>
       <Name>AIPlanning.Core</Name>

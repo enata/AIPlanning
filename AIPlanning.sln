@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning", "AIPlanning\AI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Core", "AIPlanning.Core\AIPlanning.Core.csproj", "{8CB14F18-2D41-4D10-BBD9-E3C514476236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.AStarSearch", "AIPlanning.AStarSearch\AIPlanning.AStarSearch.csproj", "{A98F9F27-445F-4381-AC65-5A1CCE465FE7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AIPlanning.Tests.AStarSearch", "AIPlanning.Tests.AStarSearch", "{013B3D9E-C807-4F6F-8477-CD3438533287}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Tests.AStarSearch", "AIPlanning.Tests.AStarSearch\AIPlanning.Tests.AStarSearch.csproj", "{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}"
@@ -31,10 +29,6 @@ Global
 		{8CB14F18-2D41-4D10-BBD9-E3C514476236}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB14F18-2D41-4D10-BBD9-E3C514476236}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB14F18-2D41-4D10-BBD9-E3C514476236}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A98F9F27-445F-4381-AC65-5A1CCE465FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A98F9F27-445F-4381-AC65-5A1CCE465FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A98F9F27-445F-4381-AC65-5A1CCE465FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A98F9F27-445F-4381-AC65-5A1CCE465FE7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C09A96BF-B5E0-4B7E-BF18-1D39B03F999F}.Release|Any CPU.ActiveCfg = Release|Any CPU
