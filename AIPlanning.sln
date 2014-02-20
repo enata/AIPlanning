@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Search.Problems"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Test.Search.Problems", "AIPlanning.Test.Search.Problems\AIPlanning.Test.Search.Problems.csproj", "{C27ED808-B5BF-436F-8546-EBCE55C03876}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.PddlParsing", "AIPlanning.PddlParsing\AIPlanning.PddlParsing.csproj", "{7ED40BF0-0C1C-4767-92ED-01D9DB0381A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIPlanning.Pddl", "AIPlanning.Pddl\AIPlanning.Pddl.csproj", "{875C9B8D-4951-4A40-9C00-CA2F700BC0CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{C27ED808-B5BF-436F-8546-EBCE55C03876}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C27ED808-B5BF-436F-8546-EBCE55C03876}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C27ED808-B5BF-436F-8546-EBCE55C03876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED40BF0-0C1C-4767-92ED-01D9DB0381A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED40BF0-0C1C-4767-92ED-01D9DB0381A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED40BF0-0C1C-4767-92ED-01D9DB0381A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED40BF0-0C1C-4767-92ED-01D9DB0381A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875C9B8D-4951-4A40-9C00-CA2F700BC0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875C9B8D-4951-4A40-9C00-CA2F700BC0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875C9B8D-4951-4A40-9C00-CA2F700BC0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875C9B8D-4951-4A40-9C00-CA2F700BC0CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

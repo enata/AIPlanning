@@ -1,6 +1,6 @@
-﻿using AIPlanning.Search;
-using AIPlanning.Search.Problems.Puzzle8;
+﻿using AIPlanning.PddlParsing;
 using System;
+using System.IO;
 
 namespace AIPlanning
 {
@@ -8,10 +8,8 @@ namespace AIPlanning
     {
         static void Main(string[] args)
         {
-            var initialState = new Puzzle8State(new[,] { { 0, 1, 2 }, { 3, 4, 5 }, { 6, 7, 8 } });
-            var heuristic = new Puzzle8NoHeurisitcs();
-            var searcher = new AStar<Puzzle8State>(heuristic);
-            int statesNumber = searcher.CountStatesAwayFrom(new Puzzle8Node(initialState), 27);
+            var str = File.ReadAllText("dwr-problem1-pos.txt");
+            var builder = new PddlModelBuilder(str);
             Console.WriteLine("!");
         }
     }
