@@ -29,7 +29,7 @@ namespace AIPlanning.Pddl
             get { return _name; }
         }
 
-        public IEnumerable<PddlVariable> Parameters
+        public PddlVariable[] Parameters
         {
             get { return _parameters; }
         }

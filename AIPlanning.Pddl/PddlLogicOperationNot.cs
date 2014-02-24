@@ -17,5 +17,10 @@ namespace AIPlanning.Pddl
         {
             get { return _operation; }
         }
+
+        public override void Accept(IPddlLogicOperationVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

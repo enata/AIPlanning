@@ -7,5 +7,10 @@ namespace AIPlanning.Pddl
         public PddlLogicOperationAnd(IEnumerable<PddlLogicOperation> operation) : base(operation)
         {
         }
+
+        public override void Accept(IPddlLogicOperationVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

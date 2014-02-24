@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPddlLogicOperationVisitor.cs" />
     <Compile Include="PddlPredicateCall.cs" />
     <Compile Include="PddlStatement.cs" />
     <Compile Include="PddlAction.cs" />
